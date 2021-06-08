@@ -3,7 +3,7 @@ const Joi =require('joi');
 const app = express();
 const auth =require("./auth");
 const helmet =require('helmet');
-
+const config =require('config');
 //To automatically convert post body to object from json
 app.use(express.json());
 //built in middleware function to automatically convert x-www-form-urlencoded data to json in the controller
